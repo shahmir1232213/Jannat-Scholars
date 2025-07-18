@@ -15,7 +15,8 @@ const SideBar: React.FC = () => {
                 {obj.links.map((link,index2)=>{
                   return(
                   <Link to={link.path}>
-                    <div key={link.name} className="p-4 hover:bg-[#1b5298] rounded-full font-bold">
+                    <div key={link.name} className="p-3 hover:bg-[#509cdb]  font-bold">
+                      {link.icon && <link.icon className="inline-block mr-2 text-lg" />}
                       {link.name}
                     </div>
                   </Link>

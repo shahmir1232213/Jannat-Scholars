@@ -4,10 +4,10 @@ import TableActionsBar from '../components/TableActionsBar'
 import Table from '../components/Table'
 
 const students = () => {
-  const [studentBoard,setStudentBoard] = React.useState <boolean>(true)
+  const [studentBoard,setStudentBoard] = React.useState <boolean>(false)
   return (
     <div className='flex'>
-      <TableActionsBar character={'Student'} />
+      <TableActionsBar character={'Student'} bgColor={'#509cdb'}  textColor={'#ffffff'}/>
       <Table />
       {studentBoard && (<FullScreenProfile />)}
       
