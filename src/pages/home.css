@@ -1,0 +1,10 @@
+.home-layout{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.child{
+    border: 2px solid red;
+    width: 100%;
+    background-color:white;
+}
